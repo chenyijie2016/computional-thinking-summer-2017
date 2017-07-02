@@ -1,0 +1,83 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1898,         73]
+NotebookOptionsPosition[      1575,         56]
+NotebookOutlinePosition[      1930,         72]
+CellTagsIndexPosition[      1887,         69]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"table", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"False", ",", "False"}], "}"}], "\[Rule]", "False"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"False", ",", "True"}], "}"}], "\[Rule]", "True"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"True", ",", "False"}], "}"}], "\[Rule]", "True"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"True", ",", "True"}], "}"}], "\[Rule]", "True"}]}], "}"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"F", "=", 
+   RowBox[{
+    RowBox[{"BooleanFunction", "[", "table", "]"}], "[", 
+    RowBox[{"x", ",", "y"}], "]"}]}], ";"}], "\n", 
+ RowBox[{"BooleanConvert", "[", 
+  RowBox[{"F", ",", "\"\<NAND\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7079973362779636`*^9, 3.7079973362779636`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"!", "x"}], "\[Nand]", 
+  RowBox[{"!", "y"}]}]], "Output",
+ CellChangeTimes->{3.707997337316655*^9}]
+}, Open  ]]
+},
+WindowSize->{860, 966},
+WindowMargins->{{74, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e748\:670817\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 842, 25, 121, "Input"],
+Cell[1425, 49, 134, 4, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
